@@ -1,0 +1,12 @@
+// Styling for the navbar
+#medium-widget {
+
+  .medium-widget-article__item {
+    border: .01rem solid #dee2e6!important;
+    @include box-shadow( 0 .125rem .25rem rgba(0,0,0,.075) );
+
+    padding: 10px;
+    margin: 10px;  
+    background: $white;   
+  }
+}
