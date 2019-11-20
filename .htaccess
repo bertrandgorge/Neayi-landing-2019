@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://neayi.com/$1 [R=301,L]
+
+Redirect 301 /index_fr.html /fr/index.html
+Redirect 301 /index_en.html /en/index.html
+
+RewriteCond %{HTTP_HOST} ^www\.neayi\.com$
+RewriteRule ^/?$ "https\:\/\/neayi\.com\/" [R=301,L]
